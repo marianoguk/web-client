@@ -1,0 +1,218 @@
+2020-07-10 00:12:42,166 INFO org.springframework.boot.StartupInfoLogger [main] Starting WebClientApplication on marianog-Lenovo with PID 23486 (/home/marianog/dev/projects/web-client/build/classes/java/main started by marianog in /home/marianog/dev/projects/web-client)
+2020-07-10 00:12:42,169 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-10 00:12:42,170 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-07-10 00:12:43,635 INFO org.springframework.boot.web.embedded.netty.NettyWebServer [main] Netty started on port(s): 8080
+2020-07-10 00:12:43,653 INFO org.springframework.boot.StartupInfoLogger [main] Started WebClientApplication in 2.006 seconds (JVM running for 2.429)
+2020-07-10 00:13:53,720 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5] REGISTERED
+2020-07-10 00:13:53,721 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5] CONNECT: jsonplaceholder.typicode.com/104.31.89.145:443
+2020-07-10 00:13:54,006 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] ACTIVE
+2020-07-10 00:13:54,246 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] READ COMPLETE
+2020-07-10 00:13:54,355 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] READ COMPLETE
+2020-07-10 00:14:01,166 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+2020-07-10 00:14:01,176 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] Handler is being applied: {uri=https://jsonplaceholder.typicode.com/posts, method=POST}
+2020-07-10 00:14:01,214 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-4] ----> Event = WRITE
+2020-07-10 00:14:01,217 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] LALALAPOST /posts HTTP/1.1
+user-agent: ReactorNetty/0.9.8.RELEASE
+host: jsonplaceholder.typicode.com
+accept: */*
+Content-Type: application/json
+content-length: 63
+
+{"id":null,"userId":65,"title":"folkjo","body":"bar8888lkjklj"}
+2020-07-10 00:14:01,219 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] FLUSH
+2020-07-10 00:14:01,223 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] READ COMPLETE
+2020-07-10 00:14:01,614 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-4] ----> Event = READ
+2020-07-10 00:14:01,615 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] LALALAHTTP/1.1 201 Created
+Date: Fri, 10 Jul 2020 03:14:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 79
+Connection: keep-alive
+Set-Cookie: __cfduid=def1fa5a36757dbc9ac9bc04438d8cb4c1594350841; expires=Sun, 09-Aug-20 03:14:01 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1594350870
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options: nosniff
+Etag: W/"4f-wocHr/C2iprbCZzwwOj6YV4kW5o"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 03d85045c40000e940e88ca200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5b071cb60d99e940-MIA
+
+{
+  "id": 101,
+  "userId": 65,
+  "title": "folkjo",
+  "body": "bar8888lkjklj"
+}
+2020-07-10 00:14:01,621 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] Received response (auto-read:false) : [Date=Fri, 10 Jul 2020 03:14:01 GMT, Content-Type=application/json; charset=utf-8, Content-Length=79, Connection=keep-alive, Set-Cookie=__cfduid=def1fa5a36757dbc9ac9bc04438d8cb4c1594350841; expires=Sun, 09-Aug-20 03:14:01 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax, X-Powered-By=Express, X-Ratelimit-Limit=1000, X-Ratelimit-Remaining=999, X-Ratelimit-Reset=1594350870, Vary=Origin, X-HTTP-Method-Override, Accept-Encoding, Access-Control-Allow-Credentials=true, Cache-Control=no-cache, Pragma=no-cache, Expires=-1, Access-Control-Expose-Headers=Location, Location=http://jsonplaceholder.typicode.com/posts/101, X-Content-Type-Options=nosniff, Etag=W/"4f-wocHr/C2iprbCZzwwOj6YV4kW5o", Via=1.1 vegur, CF-Cache-Status=DYNAMIC, cf-request-id=03d85045c40000e940e88ca200000001, Expect-CT=max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", Server=cloudflare, CF-RAY=5b071cb60d99e940-MIA]
+2020-07-10 00:14:01,643 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] Received last HTTP packet
+2020-07-10 00:14:01,652 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0x461f77a5, L:/192.168.0.26:50842 - R:jsonplaceholder.typicode.com/104.31.89.145:443] READ COMPLETE
+2020-07-10 00:15:33,310 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a] REGISTERED
+2020-07-10 00:15:33,311 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a] CONNECT: jsonplaceholder.typicode.com/172.67.189.135:443
+2020-07-10 00:15:33,361 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] ACTIVE
+2020-07-10 00:15:33,376 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:15:33,388 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:16:52,143 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+2020-07-10 00:16:52,144 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] Handler is being applied: {uri=https://jsonplaceholder.typicode.com/posts, method=POST}
+2020-07-10 00:16:52,149 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-3] ----> Event = WRITE
+2020-07-10 00:16:52,150 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] LALALAPOST /posts HTTP/1.1
+user-agent: ReactorNetty/0.9.8.RELEASE
+host: jsonplaceholder.typicode.com
+accept: */*
+Content-Type: application/json
+content-length: 63
+
+{"id":null,"userId":65,"title":"folkjo","body":"bar8888lkjklj"}
+2020-07-10 00:16:52,151 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] FLUSH
+2020-07-10 00:16:52,156 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:16:52,163 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] USER_EVENT: SslCloseCompletionEvent(SUCCESS)
+2020-07-10 00:16:52,164 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:16:52,165 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:16:52,172 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 ! R:jsonplaceholder.typicode.com/172.67.189.135:443] INACTIVE
+2020-07-10 00:16:52,178 WARN reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 ! R:jsonplaceholder.typicode.com/172.67.189.135:443] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+2020-07-10 00:16:52,198 ERROR org.springframework.core.log.CompositeLog [reactor-http-epoll-3] [1055f541-2]  500 Server Error for HTTP POST "/posts"
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to POST null [DefaultWebClient]
+	|_ checkpoint ⇢ Handler org.coding.webclient.web.resource.PostResource#add(Post) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP POST "/posts" [ExceptionHandlingWebHandler]
+Stack trace:
+2020-07-10 00:16:52,213 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0x4f71335a, L:/192.168.0.26:34850 ! R:jsonplaceholder.typicode.com/172.67.189.135:443] UNREGISTERED
+2020-07-10 00:25:28,722 INFO org.springframework.boot.StartupInfoLogger [main] Starting WebClientApplication on marianog-Lenovo with PID 24366 (/home/marianog/dev/projects/web-client/build/classes/java/main started by marianog in /home/marianog/dev/projects/web-client)
+2020-07-10 00:25:28,727 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-10 00:25:28,728 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-07-10 00:25:30,234 INFO org.springframework.boot.web.embedded.netty.NettyWebServer [main] Netty started on port(s): 8080
+2020-07-10 00:25:30,249 INFO org.springframework.boot.StartupInfoLogger [main] Started WebClientApplication in 2.201 seconds (JVM running for 2.728)
+2020-07-10 00:25:40,924 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e] REGISTERED
+2020-07-10 00:25:40,925 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e] CONNECT: jsonplaceholder.typicode.com/172.67.189.135:443
+2020-07-10 00:25:41,000 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] ACTIVE
+2020-07-10 00:25:41,019 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:25:41,126 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:25:41,143 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-4] #OTHER CLASS: io.netty.handler.ssl.SslHandshakeCompletionEvent
+2020-07-10 00:25:41,145 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+2020-07-10 00:25:41,148 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] Handler is being applied: {uri=https://jsonplaceholder.typicode.com/posts, method=POST}
+2020-07-10 00:25:41,165 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-4] ----> Event = WRITE
+2020-07-10 00:25:41,169 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] LALALAPOST /posts HTTP/1.1
+user-agent: ReactorNetty/0.9.8.RELEASE
+host: jsonplaceholder.typicode.com
+accept: */*
+Content-Type: application/json
+content-length: 63
+
+{"id":null,"userId":65,"title":"folkjo","body":"bar8888lkjklj"}
+2020-07-10 00:25:41,170 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] FLUSH
+2020-07-10 00:25:41,175 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:25:41,734 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-4] ----> Event = READ
+2020-07-10 00:25:41,735 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] LALALAHTTP/1.1 201 Created
+Date: Fri, 10 Jul 2020 03:25:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 79
+Connection: keep-alive
+Set-Cookie: __cfduid=dae86e51c5ecae210e75e7a0f51c7456f1594351541; expires=Sun, 09-Aug-20 03:25:41 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1594351590
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options: nosniff
+Etag: W/"4f-wocHr/C2iprbCZzwwOj6YV4kW5o"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 03d85af3b9000008f9e6979200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5b072dcc5ac108f9-EZE
+
+{
+  "id": 101,
+  "userId": 65,
+  "title": "folkjo",
+  "body": "bar8888lkjklj"
+}
+2020-07-10 00:25:41,745 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] Received response (auto-read:false) : [Date=Fri, 10 Jul 2020 03:25:41 GMT, Content-Type=application/json; charset=utf-8, Content-Length=79, Connection=keep-alive, Set-Cookie=__cfduid=dae86e51c5ecae210e75e7a0f51c7456f1594351541; expires=Sun, 09-Aug-20 03:25:41 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax, X-Powered-By=Express, X-Ratelimit-Limit=1000, X-Ratelimit-Remaining=999, X-Ratelimit-Reset=1594351590, Vary=Origin, X-HTTP-Method-Override, Accept-Encoding, Access-Control-Allow-Credentials=true, Cache-Control=no-cache, Pragma=no-cache, Expires=-1, Access-Control-Expose-Headers=Location, Location=http://jsonplaceholder.typicode.com/posts/101, X-Content-Type-Options=nosniff, Etag=W/"4f-wocHr/C2iprbCZzwwOj6YV4kW5o", Via=1.1 vegur, CF-Cache-Status=DYNAMIC, cf-request-id=03d85af3b9000008f9e6979200000001, Expect-CT=max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", Server=cloudflare, CF-RAY=5b072dcc5ac108f9-EZE]
+2020-07-10 00:25:41,788 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] Received last HTTP packet
+2020-07-10 00:25:41,803 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:32:21,715 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-4] #OTHER CLASS: io.netty.handler.ssl.SslCloseCompletionEvent
+2020-07-10 00:32:21,716 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] USER_EVENT: SslCloseCompletionEvent(SUCCESS)
+2020-07-10 00:32:21,718 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:32:21,719 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:32:21,722 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 ! R:jsonplaceholder.typicode.com/172.67.189.135:443] INACTIVE
+2020-07-10 00:32:21,723 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-4] [id: 0xcde69b7e, L:/192.168.0.26:35158 ! R:jsonplaceholder.typicode.com/172.67.189.135:443] UNREGISTERED
+2020-07-10 00:34:01,254 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0] REGISTERED
+2020-07-10 00:34:01,290 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0] CONNECT: jsonplaceholder.typicode.com/172.67.189.135:443
+2020-07-10 00:34:01,321 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] ACTIVE
+2020-07-10 00:34:01,338 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-3] #OTHER CLASS: io.netty.handler.ssl.SslHandshakeCompletionEvent
+2020-07-10 00:34:01,338 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+2020-07-10 00:34:01,339 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] Handler is being applied: {uri=https://jsonplaceholder.typicode.com/posts, method=POST}
+2020-07-10 00:34:01,340 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-3] ----> Event = WRITE
+2020-07-10 00:34:01,340 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] LALALAPOST /posts HTTP/1.1
+user-agent: ReactorNetty/0.9.8.RELEASE
+host: jsonplaceholder.typicode.com
+accept: */*
+Content-Type: application/json
+content-length: 63
+
+{"id":null,"userId":65,"title":"folkjo","body":"bar8888lkjklj"}
+2020-07-10 00:34:01,340 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] FLUSH
+2020-07-10 00:34:01,342 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:34:01,833 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:34:01,836 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-3] ----> Event = READ
+2020-07-10 00:34:01,837 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] LALALAHTTP/1.1 201 Created
+Date: Fri, 10 Jul 2020 03:34:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 79
+Connection: keep-alive
+Set-Cookie: __cfduid=d0b93b051d67a10a95aad527c0dc51b0e1594352041; expires=Sun, 09-Aug-20 03:34:01 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1594352070
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options: nosniff
+Etag: W/"4f-wocHr/C2iprbCZzwwOj6YV4kW5o"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 03d8629586000008b45fbf0200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5b073a027d8008b4-EZE
+
+{
+  "id": 101,
+  "userId": 65,
+  "title": "folkjo",
+  "body": "bar8888lkjklj"
+}
+2020-07-10 00:34:01,841 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] Received response (auto-read:false) : [Date=Fri, 10 Jul 2020 03:34:01 GMT, Content-Type=application/json; charset=utf-8, Content-Length=79, Connection=keep-alive, Set-Cookie=__cfduid=d0b93b051d67a10a95aad527c0dc51b0e1594352041; expires=Sun, 09-Aug-20 03:34:01 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax, X-Powered-By=Express, X-Ratelimit-Limit=1000, X-Ratelimit-Remaining=999, X-Ratelimit-Reset=1594352070, Vary=Origin, X-HTTP-Method-Override, Accept-Encoding, Access-Control-Allow-Credentials=true, Cache-Control=no-cache, Pragma=no-cache, Expires=-1, Access-Control-Expose-Headers=Location, Location=http://jsonplaceholder.typicode.com/posts/101, X-Content-Type-Options=nosniff, Etag=W/"4f-wocHr/C2iprbCZzwwOj6YV4kW5o", Via=1.1 vegur, CF-Cache-Status=DYNAMIC, cf-request-id=03d8629586000008b45fbf0200000001, Expect-CT=max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", Server=cloudflare, CF-RAY=5b073a027d8008b4-EZE]
+2020-07-10 00:34:01,845 DEBUG reactor.util.Loggers$Slf4JLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] Received last HTTP packet
+2020-07-10 00:34:01,852 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:40:41,740 DEBUG org.coding.webclient.config.Config$HttpLoggingHandler [reactor-http-epoll-3] #OTHER CLASS: io.netty.handler.ssl.SslCloseCompletionEvent
+2020-07-10 00:40:41,740 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] USER_EVENT: SslCloseCompletionEvent(SUCCESS)
+2020-07-10 00:40:41,740 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:40:41,741 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 - R:jsonplaceholder.typicode.com/172.67.189.135:443] READ COMPLETE
+2020-07-10 00:40:41,741 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 ! R:jsonplaceholder.typicode.com/172.67.189.135:443] INACTIVE
+2020-07-10 00:40:41,741 DEBUG io.netty.util.internal.logging.AbstractInternalLogger [reactor-http-epoll-3] [id: 0xf4c475f0, L:/192.168.0.26:36042 ! R:jsonplaceholder.typicode.com/172.67.189.135:443] UNREGISTERED
